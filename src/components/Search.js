@@ -16,7 +16,7 @@ class Search extends React.Component {
     render() {
         console.log(this.props);
         return(
-            <div className="col-2">
+            <div className="col-lg-3 col-4">
                <input name="search"   type="text" className="form-control" value={this.state.value} onChange={this.onChangeFilter} placeholder="Search"/>
             
             </div>

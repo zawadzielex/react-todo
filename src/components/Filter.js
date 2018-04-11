@@ -22,7 +22,7 @@ class Filter extends React.Component {
     render() {
         return(
             <div className="row justify-content-center todo__filter">
-                <div className="col-4">
+                <div className="col-lg-4 col-sm-6  col-xs-12">
                     <div className="btn-group btn-group-sm todo__filter__buttons btn-group-toggle" data-toggle="buttons">
                         <label className={`btn btn-light ${this.state.all ? "active": ""}`}>
                             <input 
@@ -59,8 +59,8 @@ class Filter extends React.Component {
                         </label>
                     </div>
                 </div>
-                <div className="col-2 d-flex align-items-center">
-                        <div className="progress" style={{width: "100%"}}>
+                <div className="col-lg-4 col-xs-12 col-sm-6 d-flex align-items-center">
+                        <div className="progress progress--todo" style={{width: "100%"}}>
                             <div className="progress-bar" role="progressbar" style={{width: `${this.props.percentComplete()}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{this.props.percentComplete()}%</div>
                         </div>
                 </div>

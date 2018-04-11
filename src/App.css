@@ -46,3 +46,9 @@
   top: 0;
   left: 15px;
 }
+
+@media (max-width: 575px) {
+  .progress--todo {
+    margin-top: 15px;
+  }
+}

@@ -114,7 +114,7 @@ class List extends React.Component {
         return(
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-6">
+                    <div className="col-lg-8 col-12">
                         <h3>List of todos</h3>
                         <Link to="/" className="btn btn-sm btn-light todo__back" >
                             <span className="oi" data-glyph="chevron-left" title="Remove" aria-hidden="true"></span>
@@ -136,7 +136,7 @@ class List extends React.Component {
                     percentComplete={this.percentComplete.bind(this)}
                 />
                 <div className="todo-lists row justify-content-center">
-                    <div className="col-6">
+                    <div className="col-lg-8 col-12">
                         {this.props.todos.isLoading && this.props.todos.data.length === 0 &&
                             <div className="progress">
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  style={{width: "100%"}}></div>

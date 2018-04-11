@@ -25,7 +25,7 @@ class Add extends React.Component {
 
     render() {
         return( 
-            <div className="col-4">
+            <div className="col-lg-5 col-8">
                 <form onSubmit={this.onSubmit}>
                 <div className="input-group mb-3">
                     <input type="text" className="form-control" value={this.state.value} onChange={this.handleChange} placeholder={this.props.placeholder}/>

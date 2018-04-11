@@ -69,7 +69,7 @@ class Lists extends React.Component {
         return (
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-6">
+                    <div className="col-lg-8 col-12">
                         <h3>Todo lists</h3>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ class Lists extends React.Component {
                 </div>
 
                 <div className="todo-lists row justify-content-center">
-                    <div className="col-6">
+                    <div className="col-lg-8 col-12">
                         {this.props.todoLists.isLoading && this.props.todoLists.data.length === 0 && 
                             <div className="progress">
                                 <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  style={{width: "100%"}}></div>
